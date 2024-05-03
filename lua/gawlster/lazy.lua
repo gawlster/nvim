@@ -18,7 +18,11 @@ require('lazy').setup({
 		'stevearc/oil.nvim',
 		opts = {},
 		dependencies = { "nvim-tree/nvim-web-devicons" },
-	}
+	},
+  {
+    'nvim-lualine/lualine.nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' }
+  }
 })
 
 vim.cmd[[colorscheme dracula]]

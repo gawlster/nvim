@@ -39,9 +39,9 @@ local options = {
 
 vim.opt.shortmess:append("c")
 
----Create highlight groups for cursor
-vim.cmd('hi ModesInsert guibg=#FFB86C')
-vim.cmd('hi ModesNormal guibg=#F8F8F2')
+-- Create highlight groups for cursor
+vim.cmd('hi ModesNormal guibg=#BD93F9')
+vim.cmd('hi ModesInsert guibg=#50FA7B')
 vim.cmd('hi ModesVisual guibg=#FF79C6')
 
 for k, v in pairs(options) do
