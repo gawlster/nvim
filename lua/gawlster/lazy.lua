@@ -12,6 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
+	"Mofiqul/dracula.nvim",
 	"nvim-lua/plenary.nvim",
 	{
 		'stevearc/oil.nvim',
@@ -19,3 +20,5 @@ require('lazy').setup({
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 	}
 })
+
+vim.cmd[[colorscheme dracula]]
