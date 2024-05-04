@@ -19,9 +19,30 @@ require('lazy').setup({
 		opts = {},
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 	},
+	{
+		'nvim-lualine/lualine.nvim',
+		dependencies = { 'nvim-tree/nvim-web-devicons' }
+	},
+	{
+		"folke/which-key.nvim",
+		event = "VeryLazy",
+		init = function()
+			vim.o.timeout = true
+			vim.o.timeoutlen = 0
+		end,
+		opts = {}
+	},
+	{
+		"nvim-treesitter/nvim-treesitter",
+		build = ":TSUpdate"
+	},
+	{
+		'windwp/nvim-autopairs',
+		event = "InsertEnter",
+		config = true
+	},
   {
-    'nvim-lualine/lualine.nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons' }
+    'nvim-telescope/telescope.nvim', tag = '0.1.6',
   }
 })
 

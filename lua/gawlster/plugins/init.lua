@@ -1,2 +1,5 @@
 require('gawlster.plugins.oil')
 require('gawlster.plugins.lualine')
+require('gawlster.plugins.whichkey')
+require('gawlster.plugins.treesitter')
+require('gawlster.plugins.telescope')
